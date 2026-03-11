@@ -3,128 +3,229 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Peter Gabriel Muchena Portfolio</title>
+<title>Peter Gabriel Muchena | Portfolio</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
 <style>
-body{
-    font-family: Arial, sans-serif;
-    margin:0;
-    background:#f5f5f5;
+/* Global */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background: #f5f5f5;
+  color: #333;
 }
 
-/* Navigation bar */
-nav{
-    background:#111;
-    color:white;
-    display:flex;
-    justify-content:space-between;
-    padding:15px;
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  padding: 15px 30px;
 }
 
-nav a{
-    color:white;
-    text-decoration:none;
-    margin-left:20px;
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
 }
 
-/* Title */
-.title{
-    text-align:center;
-    color:#1a2f6b;
-    font-size:35px;
-    margin-top:20px;
+nav a:hover {
+  color: #1e90ff;
 }
 
-/* Button */
-.open-btn{
-    display:block;
-    margin:20px auto;
-    padding:12px 25px;
-    background:#1a2f6b;
-    color:white;
-    border:none;
-    font-size:16px;
-    cursor:pointer;
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 100px 20px 50px;
+  background: linear-gradient(to right, #1e3a8a, #3b82f6);
+  color: white;
 }
 
-/* Image gallery */
-.gallery{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:20px;
-    padding:40px;
+.hero h1 {
+  font-size: 48px;
+  margin: 0;
 }
 
-.gallery img{
-    width:100%;
-    border-radius:6px;
+.hero p {
+  font-size: 20px;
+  margin-top: 10px;
 }
 
 /* Sections */
-.section{
-    display:none;
-    padding:30px;
-    text-align:center;
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* About */
+#about h2, #skills h2, #projects h2, #contact h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1e3a8a;
+}
+
+/* About text */
+#about p {
+  text-align: center;
+  font-size: 18px;
+}
+
+/* Skills */
+.skills-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.skills-list div {
+  background: #1e3a8a;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+/* Projects */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.projects img {
+  width: 100%;
+  border-radius: 6px;
+  transition: transform 0.3s;
+}
+
+.projects img:hover {
+  transform: scale(1.05);
+}
+
+/* Contact */
+#contact p {
+  text-align: center;
+  font-size: 18px;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+  font-size: 16px;
+}
+
+.contact-form button {
+  padding: 12px;
+  border: none;
+  background: #1e3a8a;
+  color: white;
+  font-size: 18px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #3b82f6;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Responsive */
+@media(max-width:768px){
+  .hero h1 {
+    font-size: 36px;
+  }
 }
 </style>
-
-<script>
-function openHomePage(){
-document.getElementById("about").style.display="block";
-document.getElementById("skills").style.display="block";
-document.getElementById("email").style.display="block";
-}
-</script>
-
 </head>
 
 <body>
 
+<!-- Navbar -->
 <nav>
-<div><b>Peter Muchena</b></div>
-
-<div>
-<a href="#">Home</a>
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#email">Contact</a>
-</div>
+  <div><b>Peter Muchena</b></div>
+  <div>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
 </nav>
 
-<h1 class="title">PETER GABRIEL MUCHENA'S PORTFOLIO BLOG</h1>
-
-<button class="open-btn" onclick="openHomePage()">Open Home Page</button>
-
-<!-- Image Section -->
-<div class="gallery">
-<img src="https://lh3.googleusercontent.com/sitesv/APaQ0SQE_vgKtcYRMVrSGkI6XQIE0Jb3BVxkD2YbIjP9aSrQfKERWKfh9XjWFqmd0XpH4Edgtiahtqz6JwUe9-h3I9qKbHanM_foY9rVlR8Ue8Oze3Kd0GNo6HNSJ1kXNR88mw2ND1On5pbb-Ciz0dOzbGm1GgzjAZxZxYsZ_OX92a03uRgmX2I1Zf8jyzAg4IucLFPf2tEkqnM9bs978Rtakh0yGbxfWlMOnN3MGjw=w1280" alt="Photo 1">
-<img src="https://lh3.googleusercontent.com/sitesv/APaQ0SRTOKdINz8pTOjta89FUcL6GTAKM3TTcZlsOuwDqpVsjLKo9OshGhOUB0E5RnH9AaMN0uWwpz90T6qvjYWu5OKQqh8ruGUdMkq6kY6rTLh3CSwUzNk2IGp24FRb5rx3oDr1Byiqww3fJAN9kaD2xSRahQnhVziqtUPEoYDDm72Dcv2bjStbPG6qQlAQF5Ae5Qo7VtrM0w2Q0YTwjtb4-5kCi0lHL1xlyxQp=w1280" alt="Photo 2">
-<img src="https://lh3.googleusercontent.com/sitesv/APaQ0SSg9pvv5iU_0KH45JlCDqyraPJRGF4Zqupm5QooPGv_DNhB2nKM6YaTBM1IgD1gVL0wT9zT6SUqHpjgfBNUYE6BHiYoLZ4yl1Am_9bdzZQwPLk1y1V3Se67h6NGgG2YNIEYQQOT3hNp7uV4Iwrshsn3wv02uyyh0B6Z35NrC4dKPr0Fbp7R-FbwhnaWqyWDRmgGpVuhBglht5bIJQcdnE9p18XVFlQv3m8bc5c=w1280" alt="Photo 3">
-<img src="https://lh3.googleusercontent.com/sitesv/APaQ0STkNXGHhqm4ELnDf-SslctJivBUSuxJeZjQaCC3z-P18Hubl7uHkQ9H0178AjEhumSVlakSnd3RdqOq10E29OkA_wajElOKTfrn9rjRlbTqL7Qks6M4HSqOWTzbdBjaF5LUnwWYsrv7gHXYrXpu_rEbVLpXO1ooT0p3PO239Ur9W3nXDgPr5xw4wcW1mzdmci0OCSsP8zIPYm_37NrNP2nmz2I58GFouqUT=w1280" alt="Photo 4">
-</div>
+<!-- Hero Section -->
+<section class="hero">
+  <h1>Peter Gabriel Muchena</h1>
+  <p>Full Stack Developer | Web & Software Developer | Tech Enthusiast</p>
+</section>
 
 <!-- About Section -->
-<div id="about" class="section">
-<h2>About Me</h2>
-<p>Hello, my name is Peter Gabriel Muchena. I am passionate about technology and web development.</p>
-</div>
+<section id="about">
+  <h2>About Me</h2>
+  <p>Hello! I am Peter Gabriel Muchena, a passionate developer with experience in web and software development. I love building modern, responsive, and interactive applications.</p>
+</section>
 
 <!-- Skills Section -->
-<div id="skills" class="section">
-<h2>Skills</h2>
-<ul>
-<li>HTML</li>
-<li>CSS</li>
-<li>Java Programming</li>
-<li>Web Design</li>
-</ul>
-</div>
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills-list">
+    <div>HTML</div>
+    <div>CSS</div>
+    <div>JavaScript</div>
+    <div>Java</div>
+    <div>React</div>
+    <div>Node.js</div>
+  </div>
+</section>
 
-<!-- Email Section -->
-<div id="email" class="section">
-<h2>Contact Me</h2>
-<p>Email: petermuchena@email.com</p>
-</div>
+<!-- Projects Section -->
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+    <img src="images/project1.jpg" alt="Project 1">
+    <img src="images/project2.jpg" alt="Project 2">
+    <img src="images/project3.jpg" alt="Project 3">
+    <img src="images/project4.jpg" alt="Project 4">
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+  <h2>Contact Me</h2>
+  <p>Email: petermuchena@email.com</p>
+  <form class="contact-form">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer>
+  &copy; 2026 Peter Gabriel Muchena | All Rights Reserved
+</footer>
 
 </body>
 </html>
