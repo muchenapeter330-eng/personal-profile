@@ -1,146 +1,138 @@
-<!DOCTYPE html>
+[03:23, 11/03/2026] Peter Gabriel Muchena!👑❤: <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Peter Gabriel Muchena Portfolio</title>
+
 <style>
 body{
     font-family: Arial, sans-serif;
     margin:0;
     background:#f5f5f5;
-    text-align:center;
 }
+
+/* Navigation bar */
+nav{
+    background:#111;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+/* Title */
 .title{
+    text-align:center;
     color:#1a2f6b;
-    font-size:40px;
-    margin-top:100px;
+    font-size:35px;
+    margin-top:20px;
 }
+
+/* Button */
 .open-btn{
     display:block;
-    margin:50px auto;
-    padding:15px 40px;
+    margin:20px auto;
+    padding:12px 25px;
     background:#1a2f6b;
     color:white;
     border:none;
-    border-radius:8px;
-    font-size:18px;
+    font-size:16px;
     cursor:pointer;
-    transition: 0.3s;
 }
-.open-btn:hover{
-    background:#3b82f6;
+
+/* Image gallery */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+    padding:40px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:6px;
+}
+
+/* Sections */
+.section{
+    display:none;
+    padding:30px;
+    text-align:center;
 }
 </style>
+
+<script>
+function openHomePage(){
+document.getElementById("about").style.display="block";
+document.getElementById("skills").style.display="block";
+document.getElementById("email").style.display="block";
+}
+</script>
+
 </head>
+
 <body>
+
+<nav>
+<div><b>Peter Muchena</b></div>
+
+<div>
+<a href="#">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#email">Contact</a>
+</div>
+</nav>
 
 <h1 class="title">PETER GABRIEL MUCHENA'S PORTFOLIO BLOG</h1>
 
-<!-- Button navigates to About page -->
-<button class="open-btn" onclick="location.href='about.html'">Open Home Page</button>
+<button class="open-btn" onclick="openHomePage()">Open Home Page</button>
 
-</body>
-</html>
-[03:39, 11/03/2026] Peter Gabriel Muchena!👑❤: <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Me - Peter Gabriel Muchena</title>
-<style>
-body{font-family:Arial,sans-serif; margin:0; background:#f5f5f5;}
-nav{background:#111; color:white; display:flex; justify-content:center; gap:20px; padding:15px;}
-nav a{color:white; text-decoration:none; font-weight:bold;}
-nav a:hover{color:#1e90ff;}
-section{max-width:900px; margin:50px auto; background:white; padding:30px; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.1);}
-h2{color:#1a2f6b;}
-</style>
-</head>
-<body>
+<!-- Image Section -->
+<div class="gallery">
+<img src="https://lh3.googleusercontent.com/sitesv/APaQ0SQE_vgKtcYRMVrSGkI6XQIE0Jb3BVxkD2YbIjP9aSrQfKERWKfh9XjWFqmd0XpH4Edgtiahtqz6JwUe9-h3I9qKbHanM_foY9rVlR8Ue8Oze3Kd0GNo6HNSJ1kXNR88mw2ND1On5pbb-Ciz0dOzbGm1GgzjAZxZxYsZ_OX92a03uRgmX2I1Zf8jyzAg4IucLFPf2tEkqnM9bs978Rtakh0yGbxfWlMOnN3MGjw=w1280" alt="Photo 1">
+<img src="https://lh3.googleusercontent.com/sitesv/APaQ0SRTOKdINz8pTOjta89FUcL6GTAKM3TTcZlsOuwDqpVsjLKo9OshGhOUB0E5RnH9AaMN0uWwpz90T6qvjYWu5OKQqh8ruGUdMkq6kY6rTLh3CSwUzNk2IGp24FRb5rx3oDr1Byiqww3fJAN9kaD2xSRahQnhVziqtUPEoYDDm72Dcv2bjStbPG6qQlAQF5Ae5Qo7VtrM0w2Q0YTwjtb4-5kCi0lHL1xlyxQp=w1280" alt="Photo 2">
+<img src="https://lh3.googleusercontent.com/sitesv/APaQ0SSg9pvv5iU_0KH45JlCDqyraPJRGF4Zqupm5QooPGv_DNhB2nKM6YaTBM1IgD1gVL0wT9zT6SUqHpjgfBNUYE6BHiYoLZ4yl1Am_9bdzZQwPLk1y1V3Se67h6NGgG2YNIEYQQOT3hNp7uV4Iwrshsn3wv02uyyh0B6Z35NrC4dKPr0Fbp7R-FbwhnaWqyWDRmgGpVuhBglht5bIJQcdnE9p18XVFlQv3m8bc5c=w1280" alt="Photo 3">
+<img src="https://lh3.googleusercontent.com/sitesv/APaQ0STkNXGHhqm4ELnDf-SslctJivBUSuxJeZjQaCC3z-P18Hubl7uHkQ9H0178AjEhumSVlakSnd3RdqOq10E29OkA_wajElOKTfrn9rjRlbTqL7Qks6M4HSqOWTzbdBjaF5LUnwWYsrv7gHXYrXpu_rEbVLpXO1ooT0p3PO239Ur9W3nXDgPr5xw4wcW1mzdmci0OCSsP8zIPYm_37NrNP2nmz2I58GFouqUT=w1280" alt="Photo 4">
+</div>
 
-<nav>
-<a href="about.html">About</a>
-<a href="skills.html">Skills</a>
-<a href="contact.html">Contact</a>
-</nav>
-
-<section>
+<!-- About Section -->
+<div id="about" class="section">
 <h2>About Me</h2>
-<p>My Name Is Peter Gabriel Muchena. I am a 19-Year-old Shona Boy Studying Computer Engineering At Botswana Accountancy College in Gaborone. I like Technology and I'm dedicated in expanding my knowledge in technical skills and innovations. I like to solve problems, and I enjoy coding and learning more about computing.</p>
+<p>My Name Is Peter Gabriel Muchena.I am a 19-Year-old Shona Boy Studying Computer Engineering At Botswana Accountancy College in Gaborone. I like Technology and I'm dedicated in expanding my knowledge in technical skills and innovations. I like to solve problems, and I enjoy coding and learning more about computing.
 
-<p>I started my primary school at Bontleng Primary School In Gaborone from 2011 up to Standard 7 final in 2018. Then proceeded to Marulamantsi Junior Secondary School in 2019 till I wrote my BGCSE final exams in 2022.</p>
+I started my primary school at Bontleng Primary School In Gaborone from the year 2011 up to my standard 7 final in 2018.I then proceeded to my junior school namely Marulamantsi Junior Secondary School in Gaborone on the year 2019 till i wrote my BGCSE final exams on the year 2022.
 
-<p>I enjoy church, cooking, going to the gym, and spending quality time with my family. I am friendly and always eager to learn. Spending time in nature brings me peace and calmness.</p>
-</section>
+I like spending my time in church, cooking my favorite meals, going to the gym, and lastly spending quality time with my family. I am more of a friendly person and always eager to learn. Whenever I'm depressed or sad, I like spending more time in nature because it brings me inner peace and calmness..</p>
+</div>
 
-</body>
-</html>
-[03:39, 11/03/2026] Peter Gabriel Muchena!👑❤: <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Skills - Peter Gabriel Muchena</title>
-<style>
-body{font-family:Arial,sans-serif; margin:0; background:#f5f5f5;}
-nav{background:#111; color:white; display:flex; justify-content:center; gap:20px; padding:15px;}
-nav a{color:white; text-decoration:none; font-weight:bold;}
-nav a:hover{color:#1e90ff;}
-section{max-width:900px; margin:50px auto; background:white; padding:30px; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.1);}
-h2{color:#1a2f6b;}
-ul{font-size:18px; line-height:1.6; list-style-type:square;}
-</style>
-</head>
-<body>
-
-<nav>
-<a href="about.html">About</a>
-<a href="skills.html">Skills</a>
-<a href="contact.html">Contact</a>
-</nav>
-
-<section>
+<!-- Skills Section -->
+<div id="skills" class="section">
 <h2>Skills</h2>
-<ul>
-<li>HTML</li>
-<li>CSS</li>
-<li>Java Programming</li>
-<li>Web Design</li>
-</ul>
-</section>
+<p>Time Management
+    Effective in managing multiple tasks with deadlines
+    
+    Communication:Clear written and verbal communication skills
 
-</body>
-</html>
-[03:39, 11/03/2026] Peter Gabriel Muchena!👑❤: <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact - Peter Gabriel Muchena</title>
-<style>
-body{font-family:Arial,sans-serif; margin:0; background:#f5f5f5;}
-nav{background:#111; color:white; display:flex; justify-content:center; gap:20px; padding:15px;}
-nav a{color:white; text-decoration:none; font-weight:bold;}
-nav a:hover{color:#1e90ff;}
-section{max-width:900px; margin:50px auto; background:white; padding:30px; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.1);}
-h2{color:#1a2f6b;}
-p{font-size:18px;}
-</style>
-</head>
-<body>
+    Teamwork
 
-<nav>
-<a href="about.html">About</a>
-<a href="skills.html">Skills</a>
-<a href="contact.html">Contact</a>
-</nav>
+    Basic Computer Knowledge
 
-<section>
+    Motivational Speaker
+</div>
+
+<!-- Email Section -->
+<div id="email" class="section">
 <h2>Contact Me</h2>
 <p>Email: petermuchena@email.com</p>
-<p>You can also contact me via social media or messaging apps.</p>
-</section>
+</div>
 
 </body>
 </html>
